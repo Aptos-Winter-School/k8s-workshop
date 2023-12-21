@@ -1,9 +1,9 @@
 apiVersion: apps/v1
-kind: Service
+kind: Deployment
 metadata:
   name: nginx-proxy
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: nginx-proxy
